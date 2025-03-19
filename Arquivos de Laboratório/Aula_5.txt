@@ -1,0 +1,7 @@
+as informações estão desordenadas
+a segunda parte do enuciado esta ordenado por nomes
+terceira parte vamos fazer a pesquisa e verificar o numero de comparacoes que foram feitas para pesquisa sequencia e para binaria
+*nao eh pra executar as duas?
+
+acessar o vetor somente uma vez
+* implementar primeiro de cabeça
