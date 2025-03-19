@@ -40,8 +40,8 @@ public class Main {
 			//pesquisa sequencial
 			for(int k = 0; k < n; k++) {
 				if(jogos[k].get_nome().equals(linha)) {
-//					jogos[k].imprimir();
-//					MyIO.print("  Sequencial: " + qtde_seq) ;
+					jogos[k].imprimir();
+					MyIO.print("  Sequencial: " + qtde_seq) ;
 					break;
 				}
 				
@@ -57,7 +57,7 @@ public class Main {
 			while(esq <= dir) {
 				meio = (esq + dir)/2;
 
-				MyIO.println("Jogo: " + jogos_ordenados[meio].get_nome());
+//				MyIO.println("Jogo: " + jogos_ordenados[meio].get_nome());
 				
 				if(jogos_ordenados[meio].get_nome().equals(linha)) {
 					esq = n;
@@ -66,15 +66,15 @@ public class Main {
 				}
 				else if((jogos_ordenados[meio].get_nome().compareTo(linha)) < 0){
 					esq = meio + 1;
-					MyIO.println("menor");
-					MyIO.println("Jogo: " + jogos_ordenados[meio].get_nome());
-					MyIO.println("Linha: " + linha);
+//					MyIO.println("menor");
+//					MyIO.println("Jogo: " + jogos_ordenados[meio].get_nome());
+//					MyIO.println("Linha: " + linha);
 				}
 				else {
 					dir = meio - 1;
-					MyIO.println("maior");
-					MyIO.println("Jogo: " + jogos_ordenados[meio].get_nome());
-					MyIO.println("Linha: " + linha);
+//					MyIO.println("maior");
+//					MyIO.println("Jogo: " + jogos_ordenados[meio].get_nome());
+//					MyIO.println("Linha: " + linha);
 				}
 				
 				qtde_bin++;
