@@ -52,29 +52,20 @@ public class Main {
 			esq = 0;
 			meio = 0;
 
-			MyIO.println("Linha: " + linha);
 			//pesquisa binaria
 			while(esq <= dir) {
 				meio = (esq + dir)/2;
-
-//				MyIO.println("Jogo: " + jogos_ordenados[meio].get_nome());
 				
 				if(jogos_ordenados[meio].get_nome().equals(linha)) {
 					esq = n;
 					MyIO.print(", binaria: " + qtde_bin);
 					break;
 				}
-				else if((jogos_ordenados[meio].get_nome().compareTo(linha)) < 0){
+				else if((jogos_ordenados[meio].get_nome().compareToIgnoreCase(linha)) < 0){
 					esq = meio + 1;
-//					MyIO.println("menor");
-//					MyIO.println("Jogo: " + jogos_ordenados[meio].get_nome());
-//					MyIO.println("Linha: " + linha);
 				}
 				else {
 					dir = meio - 1;
-//					MyIO.println("maior");
-//					MyIO.println("Jogo: " + jogos_ordenados[meio].get_nome());
-//					MyIO.println("Linha: " + linha);
 				}
 				
 				qtde_bin++;
@@ -218,7 +209,7 @@ class Jogo {
 	
 	public String toString() {
 		String resp;
-		return resp = get_nome() + "\\|" + get_editora() + "\\|" + get_ano() + "\\|" + get_Vendas_Global() + ";";
+		return resp = get_nome() + "\\|" + get_editora() + "\\|" + get_ano() + "\\|" + get_Vendas_Global() + "\\|";
 	}
 	
 	//Metodo alterado conforme dados do pub.out
