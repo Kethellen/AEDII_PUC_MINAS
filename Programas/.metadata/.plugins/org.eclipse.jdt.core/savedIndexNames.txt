@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+D:\2 - PUC - Engenharia de Computação\Semestres\2° Semestre - 2025.01\AEDII\Programas\.metadata\.plugins\org.eclipse.jdt.core
-4016297071.index
-1893684643.index
-1865797976.index
